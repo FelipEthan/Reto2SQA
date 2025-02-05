@@ -1,0 +1,48 @@
+## Descripción
+
+Este repositorio contiene las pruebas diseñadas y automatizadas para el proceso de agregar productos al carrito de compras. Las pruebas están basadas en los criterios de aceptación proporcionados y se enfocan en la automatización del sitio web de [Floristería Mundo Flor](https://www.floristeriamundoflor.com/).
+
+## Tecnologías Utilizadas
+
+- **Lenguaje:** Java
+- **Framework de Automatización:** Selenium con Cucumber
+- **Patrón de Diseño:** Screenplay
+- **Manejo de Dependencias:** Maven
+- **IDE Recomendado:** IntelliJ IDEA
+- **Herramientas de Pruebas:** Selenium WebDriver, Cucumber
+
+## Configuración del Entorno
+
+1. **Clonar el repositorio:**
+git clone <url_del_repositorio>
+
+## Instalar dependencias
+mvn clean install
+
+## Ejecución de pruebas
+mvn clean verify
+
+## Criterios de Aceptación y Escenarios de Prueba
+
+1. Productos Categoría Agradecimientos
+
+Dado que estoy en la página principal de la tienda https://www.floristeriamundoflor.com/
+Cuando selecciono la categoría "Agradecimientos"
+Entonces se visualizarán los productos para esta categoría
+
+2. Añadir dos Productos de la Categoría Agradecimientos al Carrito de Compras
+
+Dado que estoy en la categoría "Agradecimientos"
+Cuando de clic en la opción "Añadir al carrito"
+Entonces el producto se agregará al carrito de compras
+
+3. Validar que los Productos se Muestran Correctamente en la Opción Carro
+
+Dado que he agregado los productos de la categoría "Agradecimientos" al carrito
+Cuando de clic en la opción "CARRO"
+Entonces se deberán visualizar los productos agregados
+
+## Recomendaciones
+
+Verificar que el sitio web esté disponible antes de ejecutar las pruebas.
+Revisar la configuración del entorno para asegurar la correcta ejecución de las pruebas.
